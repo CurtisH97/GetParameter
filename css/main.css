@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  header,
+  footer {
+    background: gray;
+    color: oldlace;
+    width: 100%;
+    min-height: 60px;
+    text-align: center;
+  }
+  
+  main {
+    width: 100%;
+    background: azure;
+    color: indianred;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    line-height: 200%;
+  }
+  
+ 
