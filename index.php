@@ -26,14 +26,12 @@ $firstName = filter_input(INPUT_GET, 'firstname', FILTER_SANITIZE_SPECIAL_CHARS)
 $lastName = filter_input(INPUT_GET, 'lastname', FILTER_SANITIZE_SPECIAL_CHARS);
 $age=filter_input(INPUT_GET, 'age', FILTER_SANITIZE_NUMBER_INT);
 
-if(isset($_GET['firstname'] && ($_GET['lastname']) && ($_GET['age']))[
-    $firstName = htmlspecialchars(($_GET['firstname']);
-    $lastName = htmlspecialchars(($_GET['lastname']);
-    $age = htmlspecialchars(($_GET['age']);
-]
-
-else{
-    echo "Not Set!!"
+if (isset($_GET['firstname']) && ($_GET['lastname']) && ($_GET['age'])) {
+    $firstName = htmlspecialchars($_GET['firstname']);
+    $lastName = htmlspecialchars($_GET['lastname']);
+    $age = htmlspecialchars($_GET['age']);
+} else {
+    echo "URL Information not set!<br/>";
 }
 
 
